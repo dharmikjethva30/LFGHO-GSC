@@ -13,7 +13,9 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 } */
 
-.credit-score-container{
+.hero-section-container{
+  overflow: hidden;
+  position: relative;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -21,6 +23,152 @@
   /* justify-content: center; */
   align-items: center;
   width: 100%;
+}
+.hero-section{
+  position: absolute;
+  top: 10%;
+  width: 90%;
+  display: flex;
+  height: 80%;
+
+  gap : 20px;
+ 
+}
+.gsc-initials{
+  display: flex;
+  flex-direction: column;
+  
+  height: 100%;
+}
+.gsc-initials > span{
+  font-size: 100px;
+  height: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.gsc-initials span:nth-child(1){
+  animation: fadedown1 0.5s ease-in;
+}
+.gsc-initials span:nth-child(2){
+  animation: fadedown2 1s ease-in;
+}
+.gsc-initials span:nth-child(3){
+  animation: fadedown3 1.5s ease-in;
+}
+@keyframes fadedown1{
+  0%{
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadedown2{
+  0%{
+    opacity: 0;
+    transform: translateY(-150%);
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadedown3{
+  0%{
+    opacity: 0;
+    transform: translateY(-250%);
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.gsc-fullform{
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+}
+.gsc-fullform > span{
+  font-size: 80px;
+  height: 33%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+}
+@keyframes faderight {
+  0%{
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.gsc-fullform span:nth-child(1){
+  animation : faderight 0.75s ease-in;
+}
+.gsc-fullform span:nth-child(2){
+  animation : faderight 1.25s ease-in;
+}
+.gsc-fullform span:nth-child(3){
+  animation : faderight 1.75s ease-in;
+}
+.hero-desc{
+  position: absolute;
+  display: flex;
+  width: 30%;
+  right: 0;
+  text-align: right;
+  font-size: 30px;
+  /* animation: fadeleft 0.5s ease-in; */
+}
+.hero-desc > span{
+  animation: fadeleft 2s ease-in;
+  
+}
+@keyframes fadeleft {
+  0%{
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  80%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+}
+.hero-desc::after{
+  content: "";
+  width: 10px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  right: -20px;
+  background-color: bisque;
+  animation: fadedown1 1.5s ease-in;
 }
 .credit-score-meter{
   height: fit-content;

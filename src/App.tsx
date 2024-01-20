@@ -25,7 +25,25 @@ function App() {
         <ConnectKitProvider>
           <div className="home-page">
             <Navbar />
-            <div className="credit-score-container">
+            <div className="hero-section-container">
+              <div className="hero-section">
+                <div className="gsc-initials">
+                  <span>G</span>
+                  <span>S</span>
+                  <span>C</span>
+                </div>
+                <div className="gsc-fullform">
+                  <span>GHO</span>
+                  <span>Safe</span>
+                  <span>Credit</span>
+                </div>
+                <div className="hero-desc">
+                  <span>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit dictum ullamcorper. In fermentum enim non congue viverra.estibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec non neque vel erat molestie aliquet.
+                  </span>
+                
+                </div>
+              </div>
               <div className="credit-score-meter">
                 <ReactSpeedometer
                   height={500}
