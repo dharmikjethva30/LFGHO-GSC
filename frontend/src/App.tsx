@@ -39,8 +39,7 @@ function App() {
                 </div>
                 <div className="hero-desc">
                   <span>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit dictum ullamcorper. In fermentum enim non congue viverra.estibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec non neque vel erat molestie aliquet.
-                  </span>
+                  Lending platform dependent on the Credit score on the platform</span>
                 
                 </div>
               </div>
